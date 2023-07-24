@@ -1,0 +1,135 @@
+
+/* CONTENEDOR GENERAL - TRANSPARENTE */
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 50%; /* Centra horizontalmente en el 50% del ancho del navegador */
+  transform: translateX(-50%); 
+}
+
+/* BACKGROUND Y CONTENEDER DEL FORMULARIO CON ESTILO TRANSPARENTE GRISASEO Y DESENFOCADO */
+.login-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(100, 105, 28, 0.76) 50%, rgba(34, 88, 42, 0.44) 100%);
+  backdrop-filter: blur(2px);
+
+  
+}
+
+/* FORMULARIO */
+.container-form{
+  width: 50%;
+  background: rgb(0,0,0,0.45);
+  margin:auto; 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color:white; 
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+/* CONTENEDORES DE INPUTS */
+.datos{
+  margin-bottom: 20px;
+  width: 184px;
+  height: 30px;
+}
+/* INPUTS */
+.form-control{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* BOTON LOGIN - BASICO (YA NO UTILIZADO)*/
+.btn-login{
+  width: 183px;
+  background-color: darkgray;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+
+/* MESAJES DE ERROR */
+.error{
+  color: white;
+}
+
+/*BOTON LOGIN*/
+.share-button{
+  width: 184px;
+  height: 38px;
+  background: #0000007a;
+  display: flex;
+  border-radius: 8px;
+  margin: 10px 10px 30px 10px;
+  align-items:center;
+  justify-content:space-around;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: .2s linear;
+ }
+
+
+ /* PALABRA "LOGIN" DENTRO DEL BOTON */
+ .share-button p{
+  position: relative; 
+  margin-top: 6px;
+  color: white;
+  font-size: 1.3em;
+  z-index: 2;
+ }
+
+ /* FUNCION HOVER SOBRE EL BOTON LOGIN */
+ 
+ .share-button:hover{
+  transform: scale(1.1);
+ }
+ 
+
+ /* BACKGROUND DINAMICO DEL BOTON LOGIN */
+ .share-button div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:black ;
+  padding: 0px;
+  text-align: center;
+  transition: .6s linear;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+ }
+
+
+ /* BLOQUE DE ANIMACION Y EFECTOS DEL BACKGROUND DINAMICO DEL BOTON LOGIN */
+
+  .share-button div::after{
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 5px;
+      width: 174px;
+      height: 26px;
+      border-radius: 3px;
+      background-color: rgba(1, 19, 2, 0.986);
+      box-shadow: inset 16px 14px 20px #abbd098c;
+      display: block;
+      z-index: 1;
+     }

@@ -1,0 +1,30 @@
+.container-loged{
+    background-color: none;
+    width: auto;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    position: absolute;
+    top: 18px;
+
+}
+
+.bienvenido{
+    color: black;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color: aqua;
+    border: none;
+    width: 5em;
+    height: 1.8em;
+    align-self: center;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 8px;
+}
